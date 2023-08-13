@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: #2b364a;
+    display: flex;
+    flex-direction: column;
+}
+
+.points{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+.game{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player{
+    display: flex;
+}
+
+.bot{
+    display: flex;
+}
+
+.stone{
+    width: 100px;
+    height: 100px;
+    background-image: url("../public/stone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.stone:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.paper{
+    width: 100px;
+    height: 100px;
+    background-image: url("../public/paper.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.paper:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cutter{
+    width: 100px;
+    height: 100px;
+    background-image: url("../public/cutter.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cutter:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.stoneBot{
+    width: 100px;
+    height: 100px;
+    background-image: url("../public/stone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.paperBot{
+    width: 100px;
+    height: 100px;
+    background-image: url("../public/paper.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cutterBot{
+    width: 100px;
+    height: 100px;
+    background-image: url("../public/cutter.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.inGame{
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #7375a5;
+    opacity: 0.9;
+    color: white;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    animation: FadeIn 1s;
+}
+
+.close{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    color: red;
+    background-image: url("./public/close.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.playerText{
+    text-align: center;
+    color: white;
+}
+
+.versus{
+    color: red;
+    font-weight: bold;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+@keyframes FadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 0.9;}
+}
+
+
+@keyframes FadeOut {
+    0%{opacity: 0.9;}
+    100%{opacity: 0;}
+}
+
+
+@keyframes BotScale {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}

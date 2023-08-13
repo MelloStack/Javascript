@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="inGame" id="inGame">
+        <div class="close" id="close"></div>
+        <div id="player"></div>
+        <h1>VS</h1>
+        <div id="bot"></div>
+    </main>
+    <main>
+        <section class="points">
+            <h1 id="pointText">0</h1>
+        </section>
+        <section class="game">
+            <div class="player_container">
+                <div class="player">
+                    <div class="stone symbols"></div>
+                    <div class="paper symbols"></div>
+                    <div class="cutter symbols"></div>
+                </div>
+                <div class="playerText">
+                    <h1>PLAYER</h1>
+                </div>
+            </div>
+            <div class="versus"><h1>Vs</h1></div>   
+            <div class="bot_container">
+                <div class="bot">
+                    <div class="stoneBot" id="stoneBot"></div>
+                    <div class="paperBot" id="paperBot"></div>
+                    <div class="cutterBot" id="cutterBot"></div>
+                </div>
+                <div class="playerText">
+                    <h1>BOT</h1>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
